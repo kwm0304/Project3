@@ -11,12 +11,6 @@ const userSchema = new Schema(
       required: true,
       unique: true,
     },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      match: [/.+@.+\..+/, "Must use a valid email address"],
-    },
     password: {
       type: String,
       required: true,
@@ -52,6 +46,6 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
-const User = model("User", userSchema);
+const User = model("user", userSchema);
 
 module.exports = User;

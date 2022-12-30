@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../Utils/mutations';
+import { ReactSession } from 'react-client-session'
 
 import Auth from '../../Utils/auth';
 
@@ -33,8 +34,11 @@ const Login = () => {
             const { data } = await login({
                 variables: { ...formState },
             });
-
+            ReactSession.set("userId",data.login.user._id)
+            ReactSession.set("username",data.login.user.username)
+            console.log(ReactSession.get("userId"))
             Auth.login(data.login.token);
+
         } catch (e) {
             console.error(e);
         }

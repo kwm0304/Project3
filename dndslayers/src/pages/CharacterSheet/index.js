@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 // import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { CREATE_CHARACTER } from '../Utils/mutations'
+import { CREATE_CHARACTER } from '../../Utils/mutations'
 import { useMutation } from '@apollo/client';
 
 // function CharacterSheet() {
-
+//Reference reactsessionstorage.get(key value tbd)
 const CharacterSheet = () =>{
 
   const [formState, setCurrentState] = useState({
@@ -23,6 +23,7 @@ const CharacterSheet = () =>{
     alignment: '',
     passivePerception: '',
     proficiencyBonus: '',
+    spells: ''
   })
 
   const [createCharacter] = useMutation(CREATE_CHARACTER);
@@ -30,7 +31,7 @@ const CharacterSheet = () =>{
     event.preventDefault()
       try {
         const { stats } = createCharacter({
-          variables: { characterInput : formState },
+          key: { characterInput: formState },
           // const { stats } = createCharacter({
           //   key: { update : formState}
         });
@@ -40,7 +41,9 @@ const CharacterSheet = () =>{
   }
 
   const handleChange = (event) => {
+    console.log("handle change")
     const { name, value } = event.target;
+    console.log(formState)
     setCurrentState({...formState, [name]: value})
   }
   return (
@@ -85,7 +88,7 @@ const CharacterSheet = () =>{
       <Form.Group className="mb-3" controlId="characterstats">
         <Form.Label>Character Stats</Form.Label>
         <Form.Control 
-        type="number"  name='strength' value={formState.name} onChange={handleChange}/>
+        type="number"  name='strength' value={formState.strength} onChange={handleChange}/>
         <Form.Control 
         type="number"  name='dexterity' value={formState.dexterity} onChange={handleChange}/>
         <Form.Control 
@@ -119,7 +122,11 @@ const CharacterSheet = () =>{
         <Form.Control
         type='text' name='background' value={formState.background} onChange={handleChange} />
       </Form.Group>
+      <button className="btn d-block w-100" type="submit">
+                Submit
+              </button>
     </Form>
+    
   );
 };
 

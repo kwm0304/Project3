@@ -1,0 +1,32 @@
+[
+    {
+        "username": "Kwm0304",
+        "password": "abc123",
+        "characters": []
+    },    
+    {
+        "username": "Blahblah",
+        "password": "abcd12345",
+        "characters": []
+    },    
+    {
+        "username": "ExUser",
+        "password": "AbCdEf1",
+        "characters": []
+    },    
+    {
+        "username": "AnotherExUser",
+        "password": "abc123456789",
+        "characters": []
+    },    
+    {
+        "username": "MyUsername",
+        "password": "wsd123",
+        "characters": []
+    },    
+    {
+        "username": "Anotherusername",
+        "password": "CooperDPooper",
+        "characters": []
+    }    
+]

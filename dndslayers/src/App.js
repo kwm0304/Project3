@@ -4,23 +4,24 @@ import React, { useState } from 'react';
 import { setContext } from '@apollo/client/link/context'
 import { ApolloProvider, ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 //make landing page to hold neccessary components
-import Footer from './Pages/Footer'
-import Login from './Pages/Login/login';
+import Footer from './pages/Footer'
+import Login from './pages/Login';
 import Header from './components/Header';
-import Home from './Pages/home';
-import Signup from './Pages/SignUp';
-import Profile from './Pages/Profile';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
+import Profile from './pages/Profile';
 import CharacterSheet from './pages/CharacterSheet';
-import UpdateCharacter from './components/UpdateCharacter';
-import DiceRoller from './Pages/DiceRoller';
-import NameGenerator from './Pages/NameGenerator'
+// import UpdateCharacter from './components/UpdateCharacter';
+import DiceRoller from './pages/DiceRoller';
+import NameGenerator from './pages/NameGenerator'
 import { onError } from "@apollo/client/link/error";
+import { ReactSession } from 'react-client-session'
 
 
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -42,6 +43,7 @@ const client = new ApolloClient({
 // https://reactrouter.com/en/main/hooks/use-location
 // USE LOCATION ^^
 function App() {
+  ReactSession.setStoreType("localStorage")
   return (
     <ApolloProvider client={client}>
       <Router>

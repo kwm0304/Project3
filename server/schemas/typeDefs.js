@@ -27,14 +27,14 @@ type Character {
     proficiencyBonus: Int
     passivePerception: Int
     weapons: String
-    background: String
+    
 }
 
 input update {
     name: String!
-    race: String
+    race: String!
     image: String
-    class: String
+    class: String!
     background: String
     strength: Int
     dexterity: Int
@@ -64,9 +64,9 @@ type Query {
 
 type Mutation {
     createUser(username: String!, password: String!): Auth
-    login(password: String!): Auth
+    login(username: String!, password: String!): Auth
     deleteCharacter(characterId: ID): User
-    createCharacter(update: update): Character
+    createCharacter(update: String)
     updateCharacter(characterId: ID, update: update): User 
 }`
 
