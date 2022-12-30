@@ -1,80 +1,95 @@
 #Nav {
-display: flex;
-flex-direction: column;
-margin-left: 20px;
-background-color: steelblue;
-justify-content: space-between;
-color: white;
-font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  background-color: steelblue;
+  justify-content: space-between;
+  color: white;
+  font-family: monospace;
 }
-#header, h1, p {
-    background-color: steelblue;
-    margin-bottom: 45px;
-    color: white;
+
+h1,
+p {
+  background-color: steelblue;
+  margin-bottom: 45px;
+  color: white;
 }
+
+#header {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 #homeTitle {
-    color: white;
-    font-size: x-large;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    background-color: steelblue;
-    padding: 10px;
-    font-family: monospace;
+  color: white;
+  font-size: x-large;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  background-color: steelblue;
+  padding: 10px;
+  font-family: monospace;
 }
+
 #cardBody {
-    border: solid;
-    border-color: white;
+  border: solid;
+  border-color: white;
 }
 
 #background-image {
-    background-color: black;
-    background-image: url("./assets/image15.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    
+  background-color: black;
+  background-image: url("./assets/image15.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+
 }
 
 #formTitle {
-    font-family: fantasy;
+  font-family: fantasy;
 }
 
 #text {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #profileHeader {
-    color: white;
+  color: white;
 }
 
 #charForm {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    background-color: tan;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: tan;
+  padding: 20px;
 }
 
 #buttonLayout {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .ul {
-    padding: 0px;
+  padding: 0px;
 }
 
 
 
 img {
-    max-height: 150px;
+  max-height: 150px;
 }
+
 .footer-pin {
-    position: relative;
-    left:0;
-    bottom: 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
