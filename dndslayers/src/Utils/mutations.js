@@ -53,7 +53,7 @@ mutation createCharacter($update: update) {
 //Need to attach user id to character object
 
 export const UPDATE_CHARACTER = gql`
-mutation updateCharacter($characterId: ID, $characterInput: characterInput) {
+mutation updateCharacter($characterId: ID, $update: update) {
   updateCharacter(
     characterId: $characterId
     update: $update

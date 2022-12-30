@@ -66,7 +66,7 @@ type Mutation {
     createUser(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
     deleteCharacter(characterId: ID): User
-    createCharacter(update: String)
+    createCharacter(update: String): Character
     updateCharacter(characterId: ID, update: update): User 
 }`
 
