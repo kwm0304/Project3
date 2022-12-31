@@ -1,4 +1,4 @@
-![Alt text](/dndslayers/public/assets/logo.png "D&D Logo")
+![Alt text](/dndslayers/src/assets/logo.png "D&D Logo")
 # Interactive MERN Stack Single-Page Application: Dungeons & Dragons
 
 ## Introduction
