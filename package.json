@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "![Alt text](/dndslayers/src/assets/logo.png \"D&D Logo\") # Interactive MERN Stack Single-Page Application: Dungeons & Dragons",
   "main": "server/server.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"cd server && npm run watch\" \"cd dndslayers && npm start\""
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kwm0304/Project3/issues"
   },
-  "homepage": "https://github.com/kwm0304/Project3#readme"
+  "homepage": "https://github.com/kwm0304/Project3#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }
