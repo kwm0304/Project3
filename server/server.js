@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ limit: "50mb" }));
 
-const root = require("path").join(__dirname, "../client", "build");
+const root = require("path").join(__dirname, "../dndslayers", "build");
 app.use(express.static(root));
 
 // if we're in production, serve client/build as static assets
