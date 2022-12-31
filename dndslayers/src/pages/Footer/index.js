@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 function Footer() {
     return(
-        <div>Made by our group</div>
+        <footer>Made by DnDSlayers</footer>
     )
 }
 

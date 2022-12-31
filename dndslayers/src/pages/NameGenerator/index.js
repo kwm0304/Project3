@@ -41,6 +41,7 @@ function FantasyNameGenerator() {
   };
 
   return (
+    <div className="nameimg">
     <Form className="flex-row justify-center mb-4">
       <Form.Group className="card">
         <Form.Label className="card-header bg-dark text-light p-2">
@@ -50,6 +51,7 @@ function FantasyNameGenerator() {
         <p>{fantasyName}</p>
       </Form.Group>
     </Form>
+    </div>
   );
 }
 

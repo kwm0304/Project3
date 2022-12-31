@@ -72,7 +72,7 @@ const resolvers = {
         return { token, user };
       },
   
-      createCharacter: async (parent, { update }, context) => {
+      createCharacter: async (parent, { name, race }, context) => {
         if (context.user) {
           const newCharacter = await Character.create(update);
   

@@ -3,7 +3,6 @@ import { gql } from '@apollo/client'
 export const QUERY_CHARACTERS = gql`
 query allCharacters {
     allCharacters{
-        image
         name
     }
 }`;

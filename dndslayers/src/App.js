@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import CharacterSheet from './pages/CharacterSheet';
+import Character from './components/Characters/index';
 // import UpdateCharacter from './components/UpdateCharacter';
 import DiceRoller from './pages/DiceRoller';
 import NameGenerator from './pages/NameGenerator'
@@ -59,6 +60,7 @@ function App() {
           </Route>
           <Route path="/CharacterSheet" element={<CharacterSheet />} />
           <Route path="/NameGenerator" element={<NameGenerator />} />
+          <Route path="/Character" element={<Character />} />
           <Route path="*" element={<Home />} />
         </Routes>
 

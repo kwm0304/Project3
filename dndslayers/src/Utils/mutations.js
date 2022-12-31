@@ -27,27 +27,13 @@ export const CREATE_USER = gql`
 `;
 
 export const CREATE_CHARACTER = gql`
-mutation createCharacter($update: update) {
-  createCharacter(update: $update) {
-    userId
+mutation createCharacter($race: race, $class: class, $name: name, $userId: userId) {
+  createCharacter(race: $race, class: $class, name: $name, userId: $userId) {
+      userId
       name
       race
-      image
       class
-      background
-      strength
-      dexterity
-      constitution
-      intelligence
-      wisdom
-      charisma
-      level
-      hitPoints
-      weapons
-      alignment
-      proficiencyBonus
-      passivePerception
-    }
+  }
 }
 `;
 //Need to attach user id to character object
