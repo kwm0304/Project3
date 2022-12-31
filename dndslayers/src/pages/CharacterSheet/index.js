@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import { CREATE_CHARACTER } from '../../Utils/mutations'
 import { useMutation } from '@apollo/client';
-import { ReactSession } from 'react-client-session'
+// import { ReactSession } from 'react-client-session'
 
 // function CharacterSheet() {
 //Reference reactsessionstorage.get(key value tbd)
 const CharacterSheet = () =>{
 
   const [formState, setCurrentState] = useState({
-    userId: ReactSession.get('userId'),
+    // userId: ReactSession.get('userId'),
     name: '',
     image: '',
     race: '',

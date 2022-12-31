@@ -18,7 +18,7 @@ import Character from './components/Characters/index';
 import DiceRoller from './pages/DiceRoller';
 import NameGenerator from './pages/NameGenerator'
 import { onError } from "@apollo/client/link/error";
-import { ReactSession } from 'react-client-session'
+// import { ReactSession } from 'react-client-session'
 
 
 const httpLink = createHttpLink({
@@ -44,7 +44,7 @@ const client = new ApolloClient({
 // https://reactrouter.com/en/main/hooks/use-location
 // USE LOCATION ^^
 function App() {
-  ReactSession.setStoreType("localStorage")
+  // ReactSession.setStoreType("localStorage")
   return (
     <ApolloProvider client={client}>
       <Router>

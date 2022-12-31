@@ -1,46 +1,46 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import { ReactSession } from 'react-client-session'
+// import { ReactSession } from 'react-client-session'
 import Form from 'react-bootstrap/Form';
-function logout() {
-    ReactSession.set('username', null)
-    ReactSession.set('userId', null)
-    console.log('oops')
+// function logout() {
+//     ReactSession.set('username', null)
+//     ReactSession.set('userId', null)
+//     console.log('oops')
 
-}
+// }
 function Nav() {
 
-    if (ReactSession.get('userId') != null ){
-        return (
-            <>
-            <h2 className='welcome'>Hello {ReactSession.get('username')}</h2>
-            <div className='nav'>
-              {/* Nav list */}
-              <ul className="nav">
-                  <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/CharacterSheet'>
-                            Create
-                          </Link>
-                  <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/diceroller'>
-                            Dice Roller
-                          </Link>
-                  <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/profile'>
-                            My Profile
-                          </Link>
-                  <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/NameGenerator'>
-                            Name Generator
-                          </Link>
-                  <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/Character'>
-                            Characters
-                          </Link>
-                          <Form>
-                          <button className="logoutbtn" onClick={logout}>Log Out</button>
-                          </Form>
-              </ul>
-            </div>
-            </>
+    // if (ReactSession.get('userId') != null ){
+    //     return (
+    //         <>
+    //         <h2 className='welcome'>Hello {ReactSession.get('username')}</h2>
+    //         <div className='nav'>
+    //           {/* Nav list */}
+    //           <ul className="nav">
+    //               <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/CharacterSheet'>
+    //                         Create
+    //                       </Link>
+    //               <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/diceroller'>
+    //                         Dice Roller
+    //                       </Link>
+    //               <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/profile'>
+    //                         My Profile
+    //                       </Link>
+    //               <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/NameGenerator'>
+    //                         Name Generator
+    //                       </Link>
+    //               <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/Character'>
+    //                         Characters
+    //                       </Link>
+    //                       <Form>
+    //                       <button className="logoutbtn" onClick={logout}>Log Out</button>
+    //                       </Form>
+    //           </ul>
+    //         </div>
+    //         </>
             
-          )
-    } else {
+    //       )
+    // } else {
     return (
         <div className='nav-wrapper'>
           {/* Nav list */}
@@ -72,7 +72,7 @@ function Nav() {
         
       )
     }
-}
+// }
 
 
 export default Nav
