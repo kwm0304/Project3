@@ -2,11 +2,11 @@
   "name": "project3",
   "version": "1.0.0",
   "description": "![Alt text](/dndslayers/src/assets/logo.png \"D&D Logo\") # Interactive MERN Stack Single-Page Application: Dungeons & Dragons",
-  "main": "index.js",
+  "main": "server/server.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+    "develop": "concurrently \"cd server && npm run watch\" \"cd dndslayers && npm start\""
   },
   "repository": {
     "type": "git",
