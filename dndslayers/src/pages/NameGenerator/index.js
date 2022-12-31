@@ -32,6 +32,7 @@ const fantasyNameList = [
 ];
 
 function FantasyNameGenerator() {
+    event.preventDefault()
   const [fantasyName, setFantasyName] = useState("");
 
   const handleNameGeneration = () => {
@@ -47,7 +48,7 @@ function FantasyNameGenerator() {
         <Form.Label className="card-header bg-dark text-light p-2">
           Fantasy Name Generator
         </Form.Label>
-        <button onClick={handleNameGeneration}>Generate Name</button>
+        <button onClick={handleNameGeneration} >Generate Name</button>
         <p>{fantasyName}</p>
       </Form.Group>
     </Form>

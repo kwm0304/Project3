@@ -23,7 +23,6 @@ code {
   }
   #header, h1, p {
       background-color: steelblue;
-      margin-bottom: 45px;
       color: white;
   }
   #homeTitle {
@@ -77,11 +76,7 @@ code {
   img {
       max-height: 150px;
   }
-  .footer-pin {
-      position: relative;
-      left:0;
-      bottom: 0;
-  }
+ 
 
   .labelp {
     color: white;
@@ -100,7 +95,7 @@ code {
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    height: 600px;
+    height: 900px;
   }
 
   footer {
@@ -113,8 +108,76 @@ code {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+  bottom: 0;
   }
 
   .card-header {
     vertical-align: center;
   }
+
+  header {
+    padding: 20px 35px;
+    background-color: #D5F2EA;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: steelblue;
+      margin-bottom: 45px;
+      color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 1.60vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    color: #a6d5cb;
+  }
+  
+  header nav ul li a:hover {
+    background: #084045;
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
