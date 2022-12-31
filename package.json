@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "![Alt text](/dndslayers/src/assets/logo.png \"D&D Logo\") # Interactive MERN Stack Single-Page Application: Dungeons & Dragons",
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "8.x"
   },
   "main": "server/server.js",
   "workspaces": [
