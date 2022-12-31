@@ -1,25 +1,12 @@
-#Nav {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  background-color: steelblue;
-  justify-content: space-between;
-  color: white;
-  font-family: monospace;
-  }
-  #header, h1, p {
-      background-color: steelblue;
-      color: white;
-  }
+
+  
   #homeTitle {
       color: white;
-      font-size: x-large;
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-bottom: 100px;
-      background-color: steelblue;
+      font-size: 55px;
+      margin: 100px;
       padding: 10px;
       font-family: monospace;
+      text-align: center;
   }
   #cardBody {
       border: solid;
@@ -84,6 +71,18 @@
     height: 900px;
   }
 
+  .homeimg {
+    background-color: steelblue;
+    background-image: url(‘../../assets/image1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    height: 900px;
+  }
+
   footer {
     background-image: url('./assets/image6.jpeg');
     font-weight: bold;
@@ -95,7 +94,7 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-  bottom: 0;
+  
   }
 
   .card-header {
@@ -121,16 +120,27 @@
     z-index: 9999;
   }
   
-  header h1 {
+  header h1  {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
     
   }
+  header h2 {
+    margin: 0;
+    text-align: center;
+  }
   
+  .logoutbtn {
+    margin-top: 15px;
+    float: right;
+    margin-right: 220px;
+  }
   header a {
     text-decoration: none;
     color: white;
+    margin: 10px;
+    justify-content: space-between;
   }
   
   header nav {
@@ -146,6 +156,9 @@
   
   }
   
+  .welcome {
+    align-items: center;
+  }
   header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;

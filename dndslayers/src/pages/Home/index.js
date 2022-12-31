@@ -18,6 +18,7 @@ const Home = ({ value }) => {
     console.log(character.name);
     
     return (
+        <div className="homeimg">
         <main className="text-blue-100 bg-blue-500 body-font">
             <div id="backgroundColor">
                 <h2 id="homeTitle">
@@ -43,6 +44,7 @@ const Home = ({ value }) => {
                 )}
             </div>
         </main>
+        </div>
     );
 };
 

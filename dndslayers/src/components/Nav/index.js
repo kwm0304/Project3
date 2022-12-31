@@ -12,10 +12,11 @@ function Nav() {
 
     if (ReactSession.get('userId') != null ){
         return (
-            <div className='nav-wrapper'>
+            <>
+            <h2 className='welcome'>Hello {ReactSession.get('username')}</h2>
+            <div className='nav'>
               {/* Nav list */}
-              <ul className="">
-                <h2>Hello {ReactSession.get('username')}</h2>
+              <ul className="nav">
                   <Link as={Link} className="p-2 duration-300 hover:scale-105" to='/CharacterSheet'>
                             Create
                           </Link>
@@ -32,11 +33,11 @@ function Nav() {
                             Characters
                           </Link>
                           <Form>
-                          <button onClick={logout}>Log Out</button>
+                          <button className="logoutbtn" onClick={logout}>Log Out</button>
                           </Form>
               </ul>
             </div>
-        
+            </>
             
           )
     } else {

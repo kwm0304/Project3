@@ -31,8 +31,8 @@ const fantasyNameList = [
   "Zephyr",
 ];
 
-function FantasyNameGenerator() {
-    event.preventDefault()
+function FantasyNameGenerator(e) {
+    e.preventDefault();
   const [fantasyName, setFantasyName] = useState("");
 
   const handleNameGeneration = () => {
