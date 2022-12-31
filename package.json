@@ -1,31 +1,19 @@
 {
-  "name": "mern-social-media",
+  "name": "project3",
   "version": "1.0.0",
   "description": "![Alt text](/dndslayers/src/assets/logo.png \"D&D Logo\") # Interactive MERN Stack Single-Page Application: Dungeons & Dragons",
-  "engines": {
-    "node": "16.x"
-  },
-  "main": "server/server.js",
+  "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd dndslayers && npm start\"",
-    
-    "seed": "cd server && npm run seed"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^7.6.0"
-  },
-  "dependencies": {
-    "react-client-session": "^0.0.8",
-    "express": "^4.18.2"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwm0304/Project3.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kwm0304/Project3/issues"
   },
