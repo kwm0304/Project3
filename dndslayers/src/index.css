@@ -1,95 +1,179 @@
-#Nav {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  background-color: steelblue;
-  justify-content: space-between;
-  color: white;
-  font-family: monospace;
-}
-
-h1,
-p {
-  background-color: steelblue;
-  margin-bottom: 45px;
-  color: white;
-}
-
-#header {
-  padding: 20px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 #homeTitle {
   color: white;
-  font-size: x-large;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  background-color: steelblue;
+  font-size: 55px;
+  margin: 100px;
   padding: 10px;
   font-family: monospace;
+  text-align: center;
 }
-
 #cardBody {
   border: solid;
   border-color: white;
 }
-
-#background-image {
-  background-color: black;
-  background-image: url("./assets/image15.jpeg");
+.charsheetimg {
+  background-color: steelblue;
+  background-image: url(‘../../assets/image15.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-
 }
-
 #formTitle {
   font-family: fantasy;
 }
-
 #text {
   font-size: 14px;
 }
-
 #profileHeader {
   color: white;
 }
-
-#charForm {
+.CharacterSheet {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   background-color: tan;
   padding: 20px;
+  justify-content: space-around;
 }
-
 #buttonLayout {
   display: flex;
   flex-direction: row;
 }
-
 .ul {
   padding: 0px;
 }
-
-
-
 img {
   max-height: 150px;
 }
 
-.footer-pin {
-  position: relative;
-  left: 0;
-  bottom: 0;
+
+.labelp {
+color: white;
+font-weight: bold;
+font-size: 18;
+padding-right: 10px;
+
+}
+
+.nameimg {
+background-color: steelblue;
+background-image: url(‘../../assets/image13.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+height: 900px;
+}
+
+.homeimg {
+background-color: steelblue;
+background-image: url(‘../../assets/image1.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+height: 900px;
+}
+
+footer {
+background-image: url('./assets/image6.jpeg');
+font-weight: bold;
+width: 100%;
+height: 50px;
+position: sticky;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: absolute;
+
+}
+
+.card-header {
+vertical-align: center;
+}
+
+header {
+padding: 20px 35px;
+background-color: #D5F2EA;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+background-color: steelblue;
+  margin-bottom: 45px;
+  color: white;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-position: 80%;
+z-index: 9999;
+}
+
+header h1  {
+font-weight: bold;
+margin: 0;
+font-size: 36px;
+
+}
+header h2 {
+margin: 0;
+text-align: center;
+}
+
+.logoutbtn {
+margin-top: 15px;
+float: right;
+margin-right: 220px;
+}
+header a {
+text-decoration: none;
+color: white;
+margin: 10px;
+justify-content: space-between;
+}
+
+header nav {
+margin: 7px 0;
+}
+
+header nav ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+
+}
+
+.welcome {
+align-items: center;
+}
+header nav ul li a {
+padding: 10px 15px;
+font-weight: normal;
+font-size: 1.60vw;
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+color: #a6d5cb;
+}
+
+header nav ul li a:hover {
+background: #084045;
+color: white;
+border-radius: 15px;
+text-shadow: none;
 }

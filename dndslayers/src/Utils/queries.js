@@ -67,13 +67,3 @@ query character($characterId: ID) {
         image
     }
 }`
-export const QUERY_ONE_CHARACTER = gql`
-query character($characterId: ID) {
-    character(characterId: $characterId) {
-        name
-        race
-        class
-        weapons
-        image
-    }
-}`
